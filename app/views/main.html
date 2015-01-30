@@ -1,0 +1,23 @@
+<div class="container">
+<div class="row marketing">
+  <div class="products list-unstyled">
+    <li class="row" ng-repeat = "product in products">
+      <h2>{{product.name}}</h2>
+      <p>{{product.price | currency}}</p>
+      <img ng-src="images/{{product.image}}">
+
+      <form class="form-horizontal">
+      <input type="text" placeholder="product comments" ng-model="product.comments">
+      </form>
+
+
+
+    <section class="clearfix">
+      <span class="pull-right thumbnail"> <h3>Product Commetns:</h3> <h4>{{product.comments}}</h4> </span>
+       
+    </section>
+
+    </li>
+  </div>
+</div>
+</div>
